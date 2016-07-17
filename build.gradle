@@ -1,0 +1,9 @@
+task weather(type:Exec) {
+    workingDir '.'
+    commandLine 'python', 'weather.py'
+}
+
+task football(type:Exec) {
+    workingDir '.'
+    commandLine 'python', 'football.py'
+}

@@ -1,2 +1,2 @@
-python weather.py
-python football.py
+gradle weather
+gradle football
