@@ -1,2 +1,0 @@
-gradle weather
-gradle football

@@ -1,8 +1,4 @@
 language: groovy
-# command to install dependencies
-# before_install:
-# - chmod +x run.sh
-# install: "pip install -r requirements.txt"
-# command to run tests
+
 script:
 - gradle weather football
