@@ -7,7 +7,9 @@ del weather_data[0:2]
 del weather_data[-1]
 
 for day in weather_data:
-    temperature = parse_data(day, 1, 2)
+    temperature_max = parse_data(day, 1)
+    temperature_min = parse_data(day, 2)
+    temperature = temperature_max - temperature_min
     spread.append(temperature)
 
 smallest = spread.index(min(spread))

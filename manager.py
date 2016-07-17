@@ -8,23 +8,13 @@ def read_file(filename):
     return data
 
 
-def parse_data(row, column1, column2):
+def parse_data(row, column):
     try:
-        temp_max = int(row[column1])
+        data = int(row[column])
     except:
-        for i in row[column1]:
+        for i in row[column]:
             if not i.isdigit():
-                temp_max = row[column1].replace(i, "")
-        temp_max = int(temp_max)
+                data = row[column].replace(i, "")
+        data = int(data)
 
-    try:
-        temp_min = int(row[column2])
-    except:
-        for i in row[column2]:
-            if not i.isdigit():
-                temp_min = row[column2].replace(i, "")
-        temp_min = int(temp_min)
-
-    difference = temp_max - temp_min
-
-    return abs(difference)
+    return data

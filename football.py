@@ -7,7 +7,9 @@ del league[0]
 del league[-4]
 
 for team in league:
-    difference = parse_data(team, 6, 8)
+    goals_for = parse_data(team, 6)
+    goals_against = parse_data(team, 8)
+    difference = abs(goals_for - goals_against)
     spread.append(difference)
 
 smallest = spread.index(min(spread))
