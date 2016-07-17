@@ -7,3 +7,7 @@ task football(type:Exec) {
     workingDir '.'
     commandLine 'python', 'football.py'
 }
+
+task assemble {
+
+}
