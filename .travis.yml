@@ -1,4 +1,10 @@
 language: groovy
 
+before_install:
+- chmod +x gradlew
+
 script:
-- gradle weather football
+- ./gradlew data_munging
+
+notifications:
+  email: false

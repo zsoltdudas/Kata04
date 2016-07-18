@@ -1,11 +1,6 @@
-task weather(type:Exec) {
+task data_munging(type:Exec) {
     workingDir '.'
-    commandLine 'python', 'weather.py'
-}
-
-task football(type:Exec) {
-    workingDir '.'
-    commandLine 'python', 'football.py'
+    commandLine 'python', 'data_munging.py'
 }
 
 task assemble {
